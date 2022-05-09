@@ -3,7 +3,7 @@ alias nmwlan0='nmcli -f GENERAL,WIFI-PROPERTIES dev show wlan0'
 alias nmcshow='nmcli connection show'
 alias nmcshowUFMG1='nmcli connection show "UFMG 1"'
 # Misc
-alias lg="/home/mop/Códigos/Softwares/lazygit/lazygit"
+alias lg="lazygit"
 alias ld="sudo /home/mop/Códigos/Softwares/lazydocker/lazydocker"
 alias bt="bpytop"
 alias ts="sudo termshark -i"
@@ -49,4 +49,4 @@ alias sr="streamlit run "
 alias efar="export FLASK_APP=run.py"
 alias efed="export FLASK_ENV=development"
 
-alias update="sudo apt update -y && sudo apt upgrade -y"
+alias update="sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && snap refresh && flatpak update -y && flatpak uninstall --unused -y"
